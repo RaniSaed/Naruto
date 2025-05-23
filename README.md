@@ -11,3 +11,11 @@ kubectl port-forward service/backend 5000:5000
 kubectl port-forward service/frontend 3000:80
 
 kubectl port-forward service/pgadmin 5050:80
+
+
+access to the volume : 
+kubectl exec -it postgres*******-- bash
+psql -U postgres -d shop_inventory
+SELECT * FROM products;
+
+TO EXIT : \q
